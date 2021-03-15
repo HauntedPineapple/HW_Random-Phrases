@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Random Phrases</title>
+</head>
+
+<body onload="generatePhrase(phrases,portraits)">
+    <header>
+        <h1>Famous Last Words</h1>
+
+    </header>
+
+    <main> 
+        <img id="pic" src="images/Portrait_Placeholder.png" alt="person">
+        <p id="quote"></p>
+    </main>
+
+    <footer>
+        <div id="container">
+            <button class="myButton" onclick="generatePhrase(phrases,portraits)">
+                Generate Another Quote!
+            </button>
+        </div>
+        <p>
+            Copyright &copy; <b>2020</b> Audrey Main
+        </p>
+
+    </footer>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'merriweatherlight';
+    src: url('assets/merriweather-light-webfont.woff2') format('woff2'),
+         url('assets/merriweather-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweatherblack';
+    src: url('assets/merriweather-black-webfont.woff2') format('woff2'),
+         url('assets/merriweather-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'merriweather';
+    src: url('assets/merriweather-regular-webfont.woff2') format('woff2'),
+         url('assets/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url(images/background.jpg);
+    background-size: 100vw auto;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-color: #b6a164;
+    font-family: merriweather, Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header{
+    font-size: 25px;
+    margin: 10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: merriweatherblack, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+#quote{
+    padding: 20px 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    width: 500px;
+    align-self: flex-end;
+    flex: 1 1 500px;
+}
+#pic{
+    margin-left: 20px;
+    /* max-width: 60vw;
+    height: auto; */
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background-color:#3f8b00;
+	border-radius:6px;
+	border:1px solid #0a4900;
+	display:inline-block;
+	cursor:pointer;
+	color:#ebebeb;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 24px;
+    text-decoration:none;
+    margin: 20px 0px;
+    height:50px;
+}
+.myButton:hover {
+	background-color:#54a015;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+footer{
+    font-family: merriweatherlight, Arial, Helvetica, sans-serif;
+    clear: both;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 960px){
+    #container{
+        display: flex;
+        justify-content: center;
+    }
+    #quote{
+        text-align: center;
+    }
+}
